@@ -8,3 +8,23 @@
   border: 1px solid #fff;
   margin-bottom:10px;
 }
+
+.lcw-green {
+  color:#A3E534;
+}
+
+.lcw-dark-green {
+  color:#4D7C0F;
+}
+
+.lcw-red {
+  color:#EF4444;
+}
+
+.lcw-light-red {
+  color:#FF6565;
+}
+
+.lcw-dark-red {
+  color:#B91C1C;
+}
