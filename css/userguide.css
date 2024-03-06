@@ -50,3 +50,7 @@
   transform: scale(1.3);
   cursor: zoom-out
 }
+
+.lcw-header {
+  margin-top:5rem;
+}
