@@ -48,9 +48,9 @@
 					<li><a href="#install">Install Learner Credential Wallet</a></li>
 					<li><a href="#quicksetup">Quick Setup</a></li>
 					<li><a href="#home"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">home</span>Home</a> (Screen)</li>
-					<li><a href="#share"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s)</a> (Screen)</li>
 					<li><a href="#addscreen"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">add_circle</span>Add Credential(s)</a> (Screen)</li>
 					<li><a href="#addingacredential">Adding a Credential</a></li>
+					<li><a href="#share"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s)</a> (Screen)</li>
 					<li><a href="#sharingacredential">Sharing a Credential</a></li>
 					<li><a href="#settings"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">settings</span>Settings</a> (Screen)</li>
 				</ul>
@@ -59,51 +59,53 @@
 				<p>Learner Credential Wallet is a cross-platform iOS and Android mobile application for storing, sharing and mangaging digital learner credentials.</p>
 				<p>Key features include:</p>
 				<ul>
-					<li>Receiving digital credentials from standards compliant issuers via link, QR code, or JSON</li>
-					<li>Displaying and manage digital credentials</li>
-					<li>Sharing one or more credentials as public links or JSON files, e.g., for job applications</li>
-					<li>Adding a digital credential to a LinkedIn Profile</li>
+					<li>Receiving supported credentials from standards compliant issuers via a link, QR code, or JSON</li>
+					<li>Displaying and managing supported credentials</li>
+					<li>Sharing individual credentials as public links and adding a digital credential to a LinkedIn Profile, e.g., for job use on job applications</li>
+					<li>Sharing one or more credentials as file attachments</li>
 					<li>Backuping and restoring the wallet</li>
 					<li>Keeping credential access safe with strong encryption best practices</li>
 				</ul>
 				<p>The wallet is based on the <a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium's</a> <a href="https://digitalcredentials.mit.edu/docs/Learner-Credential-Wallet-Specification-May-2021.pdf">learner credential wallet specification</a> and the World Wide Web Consortium's <a href="https://w3c.github.io/vc-data-model/">Verifiable Credential Data Model</a>.</p>
-			
+
+			<!-- ***** Install Learner Credential Wallet ***** -->
 			<h3><a name="install" />Install Learner Credential Wallet</a></h3>
 				<p>Install Learner Credential Wallet from the Apple App Store or Google Play Store.</p>
 				<div class="row">
 					<div class="col-6 text-center">
-						<a href="https://apps.apple.com/app/learner-credential-wallet/id1590615710?"><img class="ios-icon pt-2" style="margin-bottom:10px;" src="images/ios-icon.svg" alt="Download on the App Store"><br />
+						<a href="https://apps.apple.com/app/learner-credential-wallet/id1590615710?"><img class="ios-icon pt-2" style="margin-bottom:1em;" src="images/ios-icon.svg" alt="Download on the App Store"><br />
 						<img src="screenshots/lcw-screenshot-apple-app-store.png" width="44%" /></a>
 					</div>
 					<div class="col-6 text-center">
-						<a href="https://play.google.com/store/apps/details?id=app.lcw&"><img class="android-icon pt-2" style="margin-bottom:10px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/><br />
+						<a href="https://play.google.com/store/apps/details?id=app.lcw&"><img class="android-icon pt-2" style="margin-bottom:1em;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/><br />
 						<img src="screenshots/lcw-screenshot-google-play-store.png" width="44%" /></a>
 					</div>
 				</div>
 
-				<h3><a name="quicksetup" />Quick Setup</a></h3>
+			<!-- ***** Quick Setup ***** -->
+			<h3><a name="quicksetup" />Quick Setup</a></h3>
 				<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-quick-setup.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Quick Setup"/>
+							<img src="screenshots/lcw-screenshot-quick-setup.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Quick Setup"/>
 						</div>
 						<div class="col-8">
 							<strong><p>Quick Setup:</strong></p>
-							<p>After installation, Learner Credential Wallet walks the user through a setup process. Select <em>Quick Setup</em> to continue.</p>
+							<p>After installation, Learner Credential Wallet takes the user through a setup process. Select <em>Quick Setup</em> to continue.</p>
 						</div>
 				</div>
 				<div class="row">
-					<div class="col-4 text-center"><img src="screenshots/lcw-screenshot-create-password-next.png" class="screenshot" width="75%" alt="Screenshot of Learner Credential Wallet Create Password"/></div>
-					<div class="col-8"><p></p><strong>Create Password:</strong></p>
+					<div class="col-4 text-center"><img src="screenshots/lcw-screenshot-create-password-next.png" class="screenshot" width="75%" alt="Screenshot of Learner Credential Wallet : Create Password"/></div>
+					<div class="col-8"><p></p><strong>Setup Password:</strong></p>
 						<p></p>The user must setup a password to secure the wallet. The user will not be able to recover a lost password, they will need to setup the wallet and request their digital credentials again, or restore from a backup. After entering the requested information select <em>Next</em> to continue.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 container-sm text-center">
-						<img src="screenshots/lcw-screenshot-register-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Register Wallet"/>
+						<img src="screenshots/lcw-screenshot-register-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Register Wallet"/>
 					</div>
 					<div class="col-8">
 						<p><strong>Register Wallet (in Learner Credential Wallet app):</strong></p>
-						<p>The user can choose to register the wallet to receive credentials from web applications. Select <em>Go to Register Wallet</em> to register the wallet. Select <em>Next/Skip</em> to skip registering the wallet.</em></p>
+						<p>The user can choose to register the wallet to receive credentials from web applications. Select <em>Go to Register Wallet</em> to register the wallet. Select <em>Next/Skip</em> to proceed without registering the wallet.</em></p>
 					</div>
 				</div>
 				<div class="row">
@@ -112,12 +114,12 @@
 					</div>
 					<div class="col-8">
 						<p><strong>Register Wallet (on Learner Credential Wallet website):</strong></p>
-						<p>If the user selects <em>Go to Register Wallet</em>, they are taken to the Learner Credential Wallet website to complete the registration processs. Select <em>Register</em> to continue with registration or return to the Learner Credential Wallet app to continue app setup.</p>
+						<p>If the user selects <em>Go to Register Wallet</em>, they are taken to the Learner Credential Wallet website to complete the registration processs. Select <em>Register</em> to continue with registration, or return to the Learner Credential Wallet app to continue app setup.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-						<img src="screenshots/lcw-screenshot-lcw.app-register-wallet-allow-wallet.png" width="75%" class="screenshot" alt="Screenshot of allowing lcw.app website to manage credenitals for the Learner Credential Wallet" />
+						<img src="screenshots/lcw-screenshot-lcw.app-register-wallet-allow-wallet.png" width="75%" class="screenshot" alt="Screenshot of allowing lcw.app website to manage credenitals for Learner Credential Wallet" />
 					</div>
 					<div class="col-8">
 						<p><strong>Register (on Learner Credential Wallet website):</strong></p>
@@ -126,7 +128,7 @@
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-						<img src="screenshots/lcw-screenshot-lcw.app-register-wallet-register.png" width="75%" class="screenshot" alt="Screenshot of confirmation of allowing lcw.app website to manage credenitals for the Learner Credential Wallet" />
+						<img src="screenshots/lcw-screenshot-lcw.app-register-wallet-register.png" width="75%" class="screenshot" alt="Screenshot of confirmation of allowing lcw.app website to manage credenitals for Learner Credential Wallet" />
 					</div>
 					<div class="col-8">
 						<p><strong>Allow Wallet (on authn.io website):</strong></p>
@@ -135,14 +137,15 @@
 				</div>					
 				<div class="row">
 					<div class="col-4 text-center">
-						<img src="screenshots/lcw-screenshot-creating-wallet.png" width="75%" class="screenshot" alt="Screenshot of Register Learner Credential Wallet Creating Wallet" />
+						<img src="screenshots/lcw-screenshot-creating-wallet.png" width="75%" class="screenshot" alt="Screenshot of Register Learner Credential Wallet : Creating Wallet" />
 					</div>
 					<div class="col-8">
 						<p><strong>Creating Wallet:</strong></p>
-						<p>After proceeding from <em>Register Wallet</em>, the app completes the setup process. Select <em>Take Me To My Wallet</em> to continue.</p>
+						<p>After proceeding from Register Wallet, the app completes the setup process. Select <em>Take Me To My Wallet</em> to continue.</p>
 					</div>
 				</div>
-					
+
+			<!-- ***** HOME ***** -->
 			<h3><a name="home" /><span class="material-symbols-outlined" style="vertical-align: text-bottom;">home</span>Home (Screen)</a></h3>
 				<p>From the Learner Credential Wallet Home, the user can access the main navigation of the app and view digital credentials that have been added to the wallet.</p>
 				<p>Main navigation:</p>
@@ -151,7 +154,6 @@
 					<li><a href="#sharescreen"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span><em>Share Credential(s)</em></a></li>
 					<li><a href="#settings"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">settings</span><em>Settings</em></a></li>
 				</ul>
-
 				<p>Home provides a list of digital credentials in Learner Credential Wallet. The user can select a credential to view, access shortcuts to manage a credential or add a credential.</p>
 			
 				<div class="row">
@@ -170,7 +172,7 @@
 
 				<div class="row">
 					<div class="col-4 text-center">
-						<img src="screenshots/lcw-screenshot-home-swipe-from-left-share.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Home Share a Credential Shortcut" />
+						<img src="screenshots/lcw-screenshot-home-swipe-from-left-share.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Home : Share a Credential Shortcut" />
 					</div>
 					<div class="col-8">
 						<p><strong>Shortcut to Share a Credential:</strong></p>
@@ -180,7 +182,7 @@
 
 				<div class="row">
 					<div class="col-4 text-center">
-						<img src="screenshots/lcw-screenshot-home-swipe-from-right-delete.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Home Delete a Credential Shortcut" />
+						<img src="screenshots/lcw-screenshot-home-swipe-from-right-delete.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Home : Delete a Credential Shortcut" />
 					</div>
 					<div class="col-8">
 						<p><strong>Shortcut to Delete a Credential:</strong></p>
@@ -188,11 +190,12 @@
 					</div>
 				</div>
 
+			<!-- ***** Add Credenital (Screen) ***** -->
 			<h3><a name="addscreen" /><span class="material-symbols-outlined" style="vertical-align: text-bottom;">add_circle</span>Add Credential (Screen)</a></h3>
 			  <p>One can add supported credentials to Learner Credential Wallet in two ways within the app. From <span class="material-symbols-outlined" style="vertical-align: text-bottom;">home</span><em>Home</em> a user can select <em>Add Credential</em> and from any screen the user can select <span class="material-symbols-outlined" style="vertical-align: text-bottom;">add_circle</span><em>Add Credential(s)</em> from the bottom navigation menu. After making this selection the user is presented the Add Credential screen.</p>
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential" />
+							<img src="screenshots/lcw-screenshot-add-credential.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential" />
 						</div>
 						<div class="col-8">
 							<p><strong>Add Credential:</strong></p>
@@ -206,11 +209,13 @@
 						</div>
 					</div>
 
+				<!-- ***** Adding a Credential ***** -->
 				<h3><a name="addingacredential" />Adding a Credential</a></h3>
-			  <p>Adding a credential by any of <a href="#addscreen">Add Credential</a> methods, or via a link sent to the user via email or provided on a website, takes the user through a process to add the supported digital credential to their wallet.</p>
+			 		<p>Adding a credential by any of <a href="#addscreen">Add Credential</a> methods, or via a link sent to the user via email or provided on a website, takes the user through a process to add the supported digital credential to their wallet.</p>
+					
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential-available-credentials.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential Available Credentials" />
+							<img src="screenshots/lcw-screenshot-add-credential-available-credentials.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential : Available Credentials" />
 						</div>
 						<div class="col-8">
 							<p><strong>Available Credentials:</strong></p>
@@ -219,9 +224,10 @@
 							<p>If a supported digital credential is already in their wallet, Learner Credential Wallet will ask them if they want to <em>Skip</em> or <em>Accept</em> the credential before proceeding.</p>
 						</div>
 					</div>
+				
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential-credential-preview.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential Credential Preview" />
+							<img src="screenshots/lcw-screenshot-add-credential-credential-preview.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential : Credential Preview" />
 						</div>
 						<div class="col-8">
 							<p><strong>Credential Preview:</strong></p>
@@ -229,18 +235,20 @@
 							<p>Learner Credential Wallet displays the Verification Status as: <span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span> (green circle with a check) or <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) <span class="lcw-green">Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span> or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 						</div>
 					</div>
+					
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential-credential-preview-issuer-info.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential Issuer info" />
+							<img src="screenshots/lcw-screenshot-add-credential-credential-preview-issuer-info.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential : Issuer info" />
 						</div>
 						<div class="col-8">
 							<p><strong>Credential Preview (Issuer Info):</strong></p>
 							<p>The user can select the Issuer Name or the <span class="material-symbols-outlined" style="vertical-align: text-bottom;">info</span> symbol to view info on the issuer.</p>
 						</div>
 					</div>
+					
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential-credential-preview-verification-status.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential Verification Status" />
+							<img src="screenshots/lcw-screenshot-add-credential-credential-preview-verification-status.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential : Verification Status" />
 						</div>
 						<div class="col-8">
 							<p><strong>Credential Preview (Verification Status):</strong></p>
@@ -250,9 +258,10 @@
 							<p>Supported credentials are re-verified on a regular basis when Learner Credential Wallet has Internet access.</p>
 						</div>
 					</div>
+				
 					<div class="row">
 						<div class="col-4 text-center">
-							<img src="screenshots/lcw-screenshot-add-credential-added-to-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet Add Credential Added to Wallet" />
+							<img src="screenshots/lcw-screenshot-add-credential-added-to-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Add Credential : Added to Wallet" />
 						</div>
 						<div class="col-8">
 							<p><strong>Available Credentials (Added to Wallet):</strong></p>
@@ -260,15 +269,17 @@
 							<p>The user should select <em>Done</em> to return <span class="material-symbols-outlined" style="vertical-align: text-bottom;">home</span>Home</a>.</p>
 						</div>
 					</div>
-			
+
+			<!-- ***** Sharing a Credential ***** -->
 			<h3><a name="sharingacredential" />Sharing a Credential</a></h3>
-					
+
+			<!-- ***** Share Credential (Screen) ***** -->
 			<h3><a name="sharecredential"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) (Screen)</a></h3>
 				<p><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) is available from the main navigation at the bottom of Learner Credential Wallet. After making this selection the user is presented the Share Credential(s) screen.</p>
 
 				<div class="row">
 					<div class="col-4 text-center">
-					 <img src="screenshots/lcw-screenshot-share.png" width="50%" class="screenshot" alt="Screenshot of Learner Credential Wallet Share Credential(s) Screen"/>
+					 <img src="screenshots/lcw-screenshot-share.png" width="50%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Share Credential(s) Screen"/>
 					</div>
 					<div class="col-8">
 						<p><strong><span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s)</strong></p>
@@ -309,8 +320,9 @@ arrow_back
 </span> back arrow</em> to return to the Share screen or select a main navigation option.</p>
 					</div>
 				</div>
-				
-			<a name="settings" /><h3><span class="material-symbols-outlined" style="vertical-align: text-bottom;">settings</span>Settings (Screen)</h3>
+
+			<!-- ***** Settings ***** -->
+			<h3><a name="settings" /><span class="material-symbols-outlined" style="vertical-align: text-bottom;">settings</span>Settings (Screen)</a></h3>
 				
 
 	<p style="class:p-small;padding-top:1rem;font-style:italic">Last Updated: March 2024, v2.0.18</p>
