@@ -528,7 +528,7 @@
 >add_circle</span></a></li>
 							<li><a href="#addExistingProfile">Add Existing Profile <span class="material-symbols-outlined" style="vertical-align: text-bottom;"
 >add_circle</span></a></li>
-							<li>Lisf of Profiles including the number of credentials stored in each Profile and a <a href="#profileMenu">Profile Menu</a></li>
+							<li>Lisf of Profiles including the number of credentials stored in each Profile and a <a href="#profileMenu"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">more_vert</span> (Profile Menu)</a></li>
 						</ul>
 						<p>To proceed, the user should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 					</div>
@@ -547,14 +547,14 @@
 					 <img src="screenshots/lcw-screenshot-settings-manage-profiles-add-existing-profile.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Manage Profiles : Add Existing Profile"/>
 					</div>
 					<div class="col-8">
-						<p><strong>Manage Profiles (Add Existing Profile)</strong></p>
-						<p>The user can choose to add an existing profile by selecting <em>Scan QR code <span class="material-symbols-outlined" style="vertical-align: text-bottom;">qr_code_scanner</span></em>, which opens the mobile devices camera to scan a QR code, or <em>Restore from a file <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span><</em>.</p>
+						<p><a name="addExistingProfile"><strong>Manage Profiles (Add Existing Profile)</strong></a></p>
+						<p>The user can choose to add an existing profile by selecting <em>Scan QR code <span class="material-symbols-outlined" style="vertical-align: text-bottom;">qr_code_scanner</span></em>, which opens the mobile devices camera to scan a QR code, or <em>Restore from a file <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em>.</p>
 						<p>To proceed, the user should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-					 <img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings"/>
+					 <img src="screenshots/lcw-screenshot-settings-manage-profiles-default-profile-three-dot-menu.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Manage Profiles : Default Profile : Menu"/>
 					</div>
 					<div class="col-8">
 						<p><strong>Manage Profiles (Profile Menu)</strong></p>
@@ -562,10 +562,10 @@
 						<ul>
 							<li>Rename: The user can rename the profile.</li>
 							<li>Backup: The user can backup the profile. Profile Backup works similarly to <a href="#backupWallet">Backup Wallet</a></li>
-							<li>View Source: The user can view the source for the profile and credentials contained within it in JSON format. The user can select within the credential text to <em>Copy</em> the credential source to the clipboard.</p></li>
+							<li>View Source: The user can view the source for the profile and credentials contained within it in JSON format. The user can select within the credential text to <em>Copy</em> the credential source to the clipboard.</li>
 							<li>Delete: The user can delete the profile.</li>
-							<p>To proceed, the user should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 						</ul>
+						<p>To proceed, the user should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -574,17 +574,37 @@
 					</div>
 					<div class="col-8">
 						<p><a name="restoreWallet"><strong>Restore Wallet</strong></a></p>
-						<p>The user can restore a wallet from a supported backup file (in JSON format). The user should select <em>Choose a file</em> to proceed with the restore. The user will be presented a file browser to find and select a supported backup file.</p>
+						<p>The user can restore a wallet from a supported backup file (in JSON format). The user should select <em>Choose a file <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em> to proceed with the restore. The user will be presented a file browser to find and select a supported backup file.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-					 <img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Backup Wallet"/>
+					 <span style="color:red;">Add screenshot</span><img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Restore Wallet : Restore Complete"/>
+					</div>
+					<div class="col-8">
+						<p><strong>Restore Wallet (Restore Complete)</strong></p>
+						<p>After selecting a wallet file to restore, Learner Credential Wallet displays the results of successfully imported credentials and duplicate credentials that were ignored. The user can select <em>Details</em> to view the details of the restore.</p>
+						<p>To proceed, the user should select <em>Close</em>.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 text-center">
+					 <img src="screenshots/lcw-screenshot-settings-backup-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Backup Wallet"/>
 					</div>
 					<div class="col-8">
 						<p><a name="backupWallet"><strong>Backup Wallet</strong></a></p>
-						<p>The user can backup the wallet contents into a file for the user to download by selecting <em>Create Backup <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em>. The user can optionally choose to add password protection. To proceed, after saving the file, the user should return to Learner Credential Wallet app.</p>
-						<p><Or the user can choose to <em>Cancel</em> the wallet backup.</p>^^^
+						<p>The user can backup the wallet contents into a file for the user to download by selecting <em>Create Backup <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em>. The user can optionally choose to add password protection.</p>
+						<p>To proceed, after saving the file, the user should return to Learner Credential Wallet app.</p>
+						<p><Or the user can choose to <em>Cancel</em> the wallet backup.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 text-center">
+					 <img src="screenshots/lcw-screenshot-settings-backup-wallet-share-sheet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Backup Wallet : Backing Up Your Wallet"/>
+					</div>
+					<div class="col-8">
+						<p><strong>Backup Wallet (Backing Up Your Wallet, iOS/iPadOS)</strong></p>
+						<p>Learner Credential Wallet displays the mobile operating system "Share Sheet" to allow the user to save or send a JSON text file containing the wallet backup. Typically the user is expected to email, save a note or save a file. The user should select the app or menu option to backup the wallet.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -592,26 +612,27 @@
 					 <img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings"/>
 					</div>
 					<div class="col-8">
-						<p><strong>TEXT</strong></p>
-						<p>TEXT</p>
+						<p><strong>Reset Wallet</strong></p>
+						<p>Resetting Learner Credential Wallet will delete all of the credentials and profiles in the wallet. This action cannot be undone. To proceed to reset the wallet select <em>Yes</em>, or <em>Cancel</em>. If the user selects Yes, they will need to <em>Exit App</em> to Restart Application.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-					 <img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings"/>
+					 <img src="screenshots/lcw-screenshot-settings-about.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : About"/>
 					</div>
 					<div class="col-8">
-						<p><strong>TEXT</strong></p>
-						<p>TEXT</p>
+						<p><a name="about"><strong>About</strong></a></p>
+						<p>About describes Learner Credential Wallet and displays version infomation.</p>
+						<p>To proceed, the user should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4 text-center">
-					 <img src="screenshots/" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings"/>
+					 <img src="screenshots/lcw-screenshot-unlock-wallet.png" width="75%" class="screenshot" alt="Screenshot of Learner Credential Wallet : Settings : Signout : Unlock Wallet"/>
 					</div>
 					<div class="col-8">
-						<p><strong>TEXT</strong></p>
-						<p>TEXT</p>
+						<p><a name="signout"><strong>Signout</strong></a></p>
+						<p>Selecting <em>Signout</em> immediately signs the user out of Learner Credential Wallet. The user must enter a password to <em>Unlock Wallet</em> or <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">face</span> Use Biometrics</em>.</p>
 					</div>
 				</div>
 				
