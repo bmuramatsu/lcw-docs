@@ -64,10 +64,12 @@ h4 {
 
   body, p {
 	  color: #000000;
+	  display: !important;
   }
   
   .title {
 	  color: #6F6f73;
+	  display: !important;
   }
   
   h1 {
