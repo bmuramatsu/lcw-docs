@@ -10,6 +10,7 @@
   vertical-align: top;
 }
 
+/* Colors from Learner Credential Wallet app */
 .lcw-green {
   color:#A3E534;
 }
@@ -35,6 +36,61 @@
   /* 400 */
 }
 
+.lcw-header {
+  margin-top:50px;
+}
+
+h3 {
+  color: #FFFFFF;
+}
+
+h4 {
+  color: #FFFFFF;
+}
+
+/* Media Query for print formatting */
+
+@media print {
+  a {
+  	color: #31788F;
+    /* Take the #55DDFF color and increase the contrast for print accessibility */
+  	text-decoration: underline;
+  }
+
+  .lcw-gray {
+    color:#6F6f73;
+    /* Take the #9CA3AF color and change to the same as paragraph and header font color */
+  }
+
+  body, p {
+	  color: #6F6f73;
+  }
+  
+  .title {
+	  color: #6F6f73;
+  }
+  
+  h1 {
+	  color: #6F6f73;
+  }
+
+  h2 {
+	  color: #6F6f73;
+  }
+
+  h3 {
+	  color: #6F6f73;
+  }
+
+  h4 {
+	  color: #6F6f73;
+  }
+  
+  .footer-text {
+	  color: #6F6f73;
+  }
+}
+
 /* Zooms Image */
 .click-zoom input[type=checkbox] {
   display: none
@@ -49,8 +105,4 @@
 .click-zoom input[type=checkbox]:checked~img {
   transform: scale(1.3);
   cursor: zoom-out
-}
-
-.lcw-header {
-  margin-top:50px;
 }
