@@ -40,7 +40,7 @@
 
 <!-- About the User guide
 	• Almost all screenshots come from the iOS version. To take them, connect an iPhone to a Mac, open QuickTime Player, and perform a File:New Movie Recording of the iPhone. This method will do a few things, it: sets the iPhone time to 9:41am, it sets the device's battery, cellular connectivity and WiFi signal strength to 100%. You can then take screenshots on the iPhone by pressing the power and volume up buttons simultaneously.
-	• The bold text for each sub-section comes directly from LCW's menu items and has the first letter of each word capitalized.
+	• The bold text for each sub-section comes directly from LCW's menu options and has the first letter of each word capitalized.
 	• The descriptions for each function re-use the exact text from the app where approriate.
 	• NOTE: There are some places in the documentation with strikethrough to indicate where the text in LCW should be updated for internal consistency within the app. Once LCW is updated, the User Guide can be updated by searching for <strike> to find text to be deleted in the User Guide.
 	• Buttons or on screen actions are italicized in the User Guide using the <em> HTML tag.
@@ -61,10 +61,9 @@
 			<ul>
 				<li>Receiving supported credentials from standards compliant issuers via a link, QR code, or JSON text</li>
 				<li>Displaying and managing supported credentials</li>
-				<li>Sharing individual credentials as public links and adding a credential to a LinkedIn Profile, e.g., for job use on job applications</li>
+				<li>Sharing individual credentials as public links and adding a credential to a LinkedIn Profile, e.g., for use on job applications</li>
 				<li>Sharing one or more credentials as files</li>
 				<li>Backing up and restoring the wallet</li>
-				<li>Keeping credential access safe with strong encryption best practices</li>
 			</ul>
 			<p>Users may also want to check the <a href="faq.html">Frequently Asked Questions</a>.</p>
 			<p>The wallet is based on the <a href="https://digitalcredentials.mit.edu/">Digital Credentials Consortium's</a> <a href="https://digitalcredentials.mit.edu/docs/Learner-Credential-Wallet-Specification-May-2021.pdf">learner credential wallet specification</a> and the World Wide Web Consortium's <a href="https://w3c.github.io/vc-data-model/">Verifiable Credential Data Model</a>.</p>
@@ -116,7 +115,7 @@
 					<div class="col-4 text-center"><img src="screenshots/lcw-screenshot-create-password-next.png" class="screenshot" width="75%" alt="Screenshot of Learner Credential Wallet : Create Password"/></div>
 					<div class="col-8"><p></p><strong>Password:</strong></p>
 						<p>The user must setup a password to secure the wallet.</p>
-						<p>The user will not be able to recover a lost password, in the event the users loses their password they will need to re-setup the wallet and request their credentials again, or <a href="#restoreWallet">restore from a backup</a>.</p>
+						<p>The user will not be able to recover a lost password, if a user loses their password they will need to re-setup the wallet and request their credentials again, or <a href="#restoreWallet">restore from a backup</a>.</p>
 						<p>After entering the requested information select <em>Next <span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_forward</span></em> to continue.</p>
 					</div>
 				</div>
@@ -199,8 +198,8 @@
 					<div class="col-8">
 						<p><strong>Home (With a Credential):</strong></p>
 						<p>Once one or more supported credentials have been added to Learner Credential Wallet, the user can view the list of credentials, select a credential to view and access shortcuts to manage a credential from Home.</p>
-						<p></p>For each supported credential, Learner Credential Wallet displays the name of the credential, an image, the issuer's name and verification status. The user will also see if Learner Credential Wallet can verify the credential from supported registries and by examining the crypotgraphic signatures contained within the supported credential.</p>
-						<p></p>Verification Status is displayed as:  <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
+						<p></p>For each supported credential, Learner Credential Wallet displays the name of the credential, an image and the issuer's name/. The user will also see if Learner Credential Wallet can verify the credential from supported registries and by examining the crypotgraphic signatures contained within the supported credential.</p>
+						<p></p>Verification Status is displayed as:  <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span> or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 						<p>Supported credentials are re-verified on a regular basis when Learner Credential Wallet has Internet access.</p>
 						<p>To view a credential select the credential (or the <em>&gt;</em> symbol).</p>
 					</div>
@@ -239,7 +238,7 @@
 							<p>The user can add a supported credential using one of the following methods:</p>
 							<ul>
 								<li><p><em>Scan QR Code</em>: If the user selects this option they can use their mobile device's camera to scan a supported QR code. The QR code may contain one or more credentials, or it may send the user to a website from which they can add one or more credentials.</p><p>If this is the first time using this feature, the user may need to give Learner Credential Wallet permission to use the camera. If the user does not grant permission but wants to scan a QR code at a later time, they can go to their mobile operating system's settings and grant permission for Learner Credential Wallet to use the camera.</p></li>
-								<li><p><em>Add from file</em>: If the user selects this option they are taken to their mobile device's file browser where they can select a supported (JSON) file containing one or more credentials.</p></li>
+								<li><p><em>Add from file</em>: If the user selects this option they are taken to their mobile device's file browser where they can select a supported JSON text file containing one or more credentials.</p></li>
 								<li><p><em>Add: Paste JSON or URL</em>: The user can paste supported JSON text or a URL to add one or more credentials.</p>
 								<p>Adding a credential by URL may add one or more credentials directly from a website, or may have the user follow a process for adding one or more credentials which may include authentication and other steps.</p></li>
 							</ul>
@@ -269,8 +268,8 @@
 						
 						<div class="col-8">
 							<p><strong>Credential Preview:</strong></p>
-							<p>The user can preview a credential before adding it to their wallet. The user will see the information the issuer of the supported credential included in the credential, typically including a credential name and description. The user will also see if Learener Credential Wallet can verify the credential from supported registries and by examining the crypotgraphic signatures contained within the supported credential.</p>
-							<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
+							<p>The user can preview a credential before adding it to their wallet. The user will see the information the issuer of the supported credential included in the credential, typically including a credential name and description. The user will also see if Learner Credential Wallet can verify the credential from supported registries and by examining the crypotgraphic signatures contained within the supported credential.</p>
+							<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 								<p>To continue, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 						</div>
 					</div>
@@ -298,9 +297,9 @@
 							<!-- NOTE: This text is the same as Home : Credential Preview : Verification Status -->
 							
 							<p><strong>Verification Status:</strong></p>
-							<p>The user can select <em><span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span>Credential Verified</em> (or the <em>&gt;</em> symbol) to view Verification Status.</p>
+							<p>The user can select <em><span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span>Credential Verified</em>, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span> (or the <em>&gt;</em> symbol) to view Verification Status.</p>
 							<p>Verification Status will display the information that Learner Credential Wallet can verify from supported registries and by examining the cryptographic signatures contained within the supported credential. It will also display the last time verification was completed.</p>
-							<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
+							<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 							<p>Supported credentials are re-verified on a regular basis when Learner Credential Wallet has Internet access.</p>
 							<p>To continue, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 						</div>
@@ -333,7 +332,7 @@
 						
 						<p><strong>Credential Preview</strong></p>
 						<p>The user will see the information the issuer of the supported credential included in the credential, typically including a credential name and description, and Verification Status that Learner Credential Wallet can verify from supported registries and by examining the cryptographic signatures contained within the supported credential.</p>
-						<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
+						<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) <span class="lcw-green">Verified</span>, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) Credential Verified, <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) verified, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 								<p>The user has a number of options, including to:</p>
 								<ul>
 									<li><a href="#credentialPreviewViewIssuerInfo">View Issuer Info</a></li>
@@ -370,7 +369,7 @@
 						<p><a name="credentialPreviewViewVerificationStatus"><strong>Verification Status</strong></a></p>
 						<p>The user can select <em><span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> Credential Verified</em> (or the <em>&gt;</em> symbol) to view Verification Status.</p>
 						<p>Verification Status will display the information that Learner Credential Wallet can verify from supported registries and by examining the cryptographic signatures contained within the supported credential. It will also display the last time verification was completed.</p>
-						<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) or <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) <span class="lcw-green">Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) <span class="lcw-red">Not Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
+						<p>Learner Credential Wallet displays Verification Status as: <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check_circle</span></span> (green circle with a check) or <span class="lcw-green"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">check</span></span> (green check) <span class="lcw-green">Verified</span>, <span class="lcw-red"><span class="material-symbols-outlined">cancel</span></span> (red x) <span class="lcw-red">Invalid Credential</span>, <span class="lcw-red"><span class="material-symbols-outlined" style="vertical-align: text-bottom;" style="color:#EF4444;">close</span></span> (red x) not verified or <span class="lcw-gray"><span class="material-symbols-outlined" style="vertical-align: text-bottom;">sync</span></span> (arrows circling) <span class="lcw-gray">Verifying</span>.</p>
 						<p>Supported credentials are re-verified on a regular basis when Learner Credential Wallet has Internet access.</p>
 						<p>To continue, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>.</p>
 					</div>
@@ -385,9 +384,9 @@
 						<p><a name="credentialPreviewViewMenu"><strong>Credential Preview (Menu)</strong></a></p>
 						<p>A user can select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">more_vert</span>three vertical dots</em> next to the Credential Preview label to display a menu, including:</p>
 						<ul>
-							<li><a href="#shareCredential">Share</a></li>
-							<li><a href="#viewSource">View Source</a></li>
-							<li><a href="#credentialPreviewDelete">Delete</a></li>
+							<li><em><a href="#shareCredential">Share</a></em></li>
+							<li><em><a href="#viewSource">View Source</a></em></li>
+							<li><em><a href="#credentialPreviewDelete">Delete</a></em></li>
 						</ul>
 					</div>
 				</div>
@@ -464,9 +463,9 @@
 					</div>
 					<div class="col-8">
 						<p><strong>Public Link</strong></p>
-						<p>After the Public Link is created, the user can <em>Copy</em> the link to the clipboard for sharing, <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">link_off</span> Unshare</em> the link to remove the public link or <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">open_in_new</span>View Link</em>.</p>
+						<p>After the Public Link is created, the user can <em>Copy</em> the link to the clipboard, <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">link_off</span> Unshare</em> the link to remove the public link or <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">open_in_new</span>View Link</em>.</p>
 						<p>The user can also choose to <a href="#addToLinkedInProfile"><em>Add to LinkedIn Profile</em></a>.</p>
-						<p>To continue, select a Share Credential menu item, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>, or select a main navigation option at the bottom of the screen.</p>
+						<p>To continue, select a Share Credential menu option, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>, or select a main navigation option at the bottom of the screen.</p>
 					</div>
 				</div>
 				
@@ -477,7 +476,7 @@
 					<div class="col-8">
 						<p><strong>Public Link on VerifierPlus</strong></p>
 						<p>If the users selects <em>View Link</em> they will see the credential as shared and publicly available on the VerifierPlus website.</p>
-						<p>The credential contains the same information as displayed in Learner Credential Wallet and includes Verification Status, last checked date and allows the viewer to <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;transform:rotate(90deg);">autorenew</span>Run Verification</em> to re-verify the credential.</p>
+						<p>The credential contains the same information as displayed in Learner Credential Wallet and includes verification status, last checked date and allows the viewer to <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;transform:rotate(90deg);">autorenew</span>Run Verification</em> to re-verify the credential.</p>
 					</div>
 				</div>
 
@@ -487,11 +486,11 @@
 					</div>
 					<div class="col-8">
 						<p><a name="addToLinkedInProfile"><strong>Add to LinkedIn Profile</strong></a></p>
-						<p>A user can share their credential on their LinkedIn Profile. We provide a shortcut to help the user do so. Adding a credential to a LinkedIn Profile from Learner Credential Wallet also requires the user to “Create Public Link” as that will allow visitors to the LinkedIn Profile to view the credential.</p>
+						<p>A user can share their credential on their LinkedIn Profile by using the <em>Add to LinkedIn Profile</em> shortcut.</p>
 						<p>Note: Before a user can add a Public Link created through the Learner Credential Wallet to their LinkedIn Profile, they must:</p>
 						<ul>
 							<li>Either have already created a Public Link or Learner Credential Wallet will create a Public Link at the same time as the user selects Add to LinkedIn Profile.</li>
-							<li>Have the LinkedIn app installed on their mobile device. Note: LinkedIn requires the use the LinkedIn mobile app and not the website for this shortcut to work.</li>
+							<li>Have the LinkedIn app installed on their mobile device. Note: LinkedIn requires the use of the LinkedIn mobile app and not the website for this shortcut to work.</li>
 							<li>Be logged in to their LinkedIn profile.</li>
 						</ul>
 					</div>
@@ -522,7 +521,7 @@
 						<p><strong>Share</strong></p>
 							<p>The user can share a supported credential using one of following methods:</p>
 							<ul>
-								<li>Create a public link: Allows publicly sharing one credential at a time. The process to create a public link is similar between the main navigation <span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) and the Credential Preview Share menu item. Please see <a href="#createAPublicLinkandAddToLinkedInProfile">Create a Public Link</a> for more information. </li>
+								<li>Create a public link: Allows publicly sharing one credential at a time. The process to create a public link is similar between the main navigation <span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) and the Credential Preview Share menu option. Please see <a href="#createAPublicLinkandAddToLinkedInProfile">Create a Public Link</a> for more information. </li>
 								<li><a href="#sendCredentials">Send a credential</a>: Allows sending one or more credentials as a JSON text file.</li>
 								<li>Scan a shared QR code: Allows scanning a shared QR code to send one or more credentials.</li>
 							</ul>
@@ -535,8 +534,8 @@
 					<div class="col-8">
 						<p><strong><a name="sendCredentials" />Send Credential(s)</strong></p>
 						<p>Learner Credential Wallet allows the user to Send Credential(s) via the mobile operating systems "Share Sheet".</p>
-						<p>To continue, select one or more credentials and then select <em>Send Selected Credentials</em>, or should select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em> to cancel.</p>
-						<p>Note: The Send Credential action accessible from the <span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) (Screen) allows the user to send one or more credentials. Similar sending functionality is available from the Credential Preview menu, however only the credential being previewed can be sent.</p>
+						<p>To continue, select one or more credentials and then select <em>Send Selected Credentials</em>, or select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em> to cancel.</p>
+						<p>Note: The Send Credential action accessible from the <span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) (Screen) allows the user to select one or more credentials to be sent. Similar sending functionality is available from the Credential Preview menu, however only the credential being previewed can be sent.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -569,7 +568,6 @@
 						<p>Learner Credential Wallet displays the mobile operating system "Share Sheet" to allow the user to attach a JSON text file containing the selected credential(s).</p>
 						<p>Typically the user is expected to email, save a note or save the credential)(s) as a file. Select an app or menu option to send the credential, or cancel.</p>
 						<p>After selecting an option the user is returned to Share Preview where they can select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em> to continue, or select a main navigation option at the bottom of the screen.</p>
-						<p>Note: The Send Credential action available from the Credential Preview menu allows the user to send the credential being previewed. To send one or more credentials the user should go to the <span class="material-symbols-outlined" style="vertical-align: text-bottom;">share</span>Share Credential(s) (Screen) and select <em>Send credentials</em>.</p>
 					</div>
 				</div>
 
@@ -631,7 +629,6 @@
 							<li><a href="#addExistingProfile">Add <strike><span style="color:red;">E</span></strike>existing <strike><span style="color:red;">P</span></strike>profile <span class="material-symbols-outlined" style="vertical-align: text-bottom;">add_circle</span></a></li>
 							<li>View a list of profiles including the number of credentials stored in each Profile</li>
 						</ul>
-						<p>To continue, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>, or select a main navigation option at the bottom of the screen.</p>
 					</div>
 				</div>
 				
@@ -691,7 +688,7 @@
 						<p><a name="restoreWallet"><strong>Restore Wallet</strong></a></p>
 						<p>The user can restore a wallet from a supported backup file (in JSON text format).</p>
 						<p>The restore will replace the entire contents of the wallet.</p>
-						<p>Select <em>Choose a file <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em> to find and select a supported backup file, select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em>, or select a main navigation option at the bottom of the screen. </p>
+						<p>Select <em>Choose a file <span class="material-symbols-outlined" style="vertical-align: text-bottom;">upload_file</span></em> to find and select a supported backup file, or select the <em><span class="material-symbols-outlined" style="vertical-align: text-bottom;">arrow_back</span> back (left) arrow</em> or select a main navigation option at the bottom of the screen. </p>
 					</div>
 				</div>
 				
@@ -736,7 +733,7 @@
 						<p><a name="resetWallet"><strong>Reset Wallet</strong></a></p>
 						<p>Resetting Learner Credential Wallet will delete all of the credentials and profiles in the wallet.</p>
 						<p>This action cannot be undone.</p>
-						<p>To reset the wallet select <em>Yes</em>, otherwise select <em>Cancel</em>.</p>
+						<p>To reset the wallet select <em>Yes</em>, or select <em>Cancel</em>.</p>
 						<p>If the user selects <em>Yes</em>, they will need to <em>Exit App</em> to restart Learner Credential Wallet.</p>
 					</div>
 				</div>
