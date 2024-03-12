@@ -52,20 +52,20 @@ h4 {
 
 @media print {
   a {
-  	color: #31788F;
-		display: !important;
+	  color: #31788F;
+	  display: !important;
     /* Take the #55DDFF color and increase the contrast for print accessibility */
-  	text-decoration: underline;
+	  text-decoration: underline;
   }
 
   .lcw-gray {
-    color:#6F6f73;
-		display: !important;
+	  color:#6F6f73;
+	  display: !important;
     /* Take the #9CA3AF color and change to the same as paragraph and header font color */
   }
 
   body, p {
-	  color: #000000;
+	  color: #6F6f73;
 	  display: !important;
   }
   
